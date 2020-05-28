@@ -8,12 +8,14 @@ Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de 
 
 
 **Titulo** : Planetario
+
 **Web:**   http://Mairendon.github.io
+
 **Autor:**  Mairen Rendón (Mairendon)
 
-**Resumen** : Este proyecto intenta acercarnos 
+**Resumen** : Este proyecto recoge algunas de las fotografías de las dos sondas espaciales conocidas como Voyager I y Voyager II.
 
-**Estilo/género:**  Novela / juego / portfolio / documental... etc.
+**Estilo/género:**  Documental.
 
 **Logotipo** : (insertar imagen y breve justificación, si  tiene) 
 
@@ -21,9 +23,9 @@ Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de 
 
 **Resolución:** 800x600px responsivo/o tamaño fijo (indicar la que has aplicado, y si es reescalable)
 
-**Probado en:**   (indicar dónde has probado que funciona: ej. Google Chrome / MS Edge... /móviles android )
+**Probado en:**   Google Chrome, Microsoft Edge, safari, Mozilla, desde varios dispositivos móviles. 
 
-**Tamaño proyecto:** 14MB 
+**Tamaño proyecto:** 51.1 MB
 
 **Licencia** Este proyecto tiene una Licencia CC Reconocimiento Compartir igual (CC BY-SA)
 
@@ -31,9 +33,10 @@ Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de 
 
 **Medios** (donde se tiene presencia relacionada):
 
-- Github:
-- Twitter
-- Instagram
+- Github: https://github.com/Mairendon
+- Twitter: @IronMairen
+- Instagram: mairythopia
+
 
 
 ![girl](https://github.com/mgea/cmi20/blob/master/WalkingGirl_front01.png)
