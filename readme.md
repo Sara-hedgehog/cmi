@@ -1,4 +1,4 @@
-## (Nombre del proyecto)
+## Planetario
 
 Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de la Univesidad de Granada
 
@@ -101,6 +101,7 @@ Este  proyecto es interesante porque ...
 
 ### Etapa 3: Problemas identificados
 
+
 (que consideras que no  funciona correctamente y por qué )
 
 
@@ -123,18 +124,18 @@ Este  proyecto es interesante porque ...
 
 **Recursos y materiales audiovisuales:**
 
-* Musica:  
-* Imágenes:  
-* Tipografía
+* Musica: Preludio a la siesta de un fáuno  
+* Imágenes: Pertenecientes a la Nasa y al observatorio Astrohita
+* Tipografía: Mella Nisa (dafont)
 
 **Herramientas utilizadas**
 
 - Hippani Animator 5.1
-- 
+- Adobe Photoshop
+- Adobe Illustrator
 
 
-
-(imagen de la licencia, copiar y pegar aquí la correcta)
+![licencia](https://github.com/Mairendon/Mairendon.github.io/blob/master/licencia.png)
 
 https://creativecommons.org/licenses/?lang=es
 
