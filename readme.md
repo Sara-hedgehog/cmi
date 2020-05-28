@@ -17,9 +17,9 @@ Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de 
 
 **Estilo/género:**  Documental.
 
-**Logotipo** : (insertar imagen y breve justificación, si  tiene) 
+**Logotipo** : 
+![astropumking](https://github.com/Mairendon/Mairendon.github.io/blob/master/Logo.png)
 
-(insertar imágenes a resolucion de 100px alto)
 
 **Resolución:** 800x600px responsivo/o tamaño fijo (indicar la que has aplicado, y si es reescalable)
 
@@ -39,7 +39,7 @@ Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de 
 
 
 
-![girl](https://github.com/mgea/cmi20/blob/master/WalkingGirl_front01.png)
+![astro](https://github.com/Mairendon/Mairendon.github.io/blob/master/Ejemplo.png)
 
 # 2. Memoria del proyecto 
 
