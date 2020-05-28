@@ -51,11 +51,7 @@ Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de 
 
 
 ### 2.2. Esquema de navegación 
-
-
-
-(imagen con las distintas pantallas de navegación, usa draw.io o cualquier programa de dibujo)
-
+![mao](https://github.com/Mairendon/Mairendon.github.io/blob/master/Sitemap.png)
 
 
 
