@@ -75,14 +75,13 @@ Metodología de desarrollo de productos multimedia basado en una metodología de
 
 **Motivación de la propuesta** 
 
-Este  proyecto es interesante porque ... 
+Mi afan por conocer el espacio y lo que me oculta. Desde siempre al ser humano le ha interesado conocer lo que hay fuera y con las Voyager estamos más cerca de verlo.
 
 
 
 **Publico / audiencia**
 
-- Orientado a 
-
+- Orientado a todos los públicos.
 
 
 
@@ -102,7 +101,7 @@ Este  proyecto es interesante porque ...
 ### Etapa 3: Problemas identificados
 
 
-(que consideras que no  funciona correctamente y por qué )
+Posiblemente uno de los problemas es que el proyecto no es tan intuitivo como debería ser, estoy trabajando por lograr este objetivo. 
 
 
 
