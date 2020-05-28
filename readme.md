@@ -21,9 +21,9 @@ Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de 
 ![astropumking](https://github.com/Mairendon/Mairendon.github.io/blob/master/Logo.png)
 
 
-**Resolución:** 800x600px responsivo/o tamaño fijo (indicar la que has aplicado, y si es reescalable)
+**Resolución:** 800x600px de tamaño ajustable. 
 
-**Probado en:**   Google Chrome, Microsoft Edge, safari, Mozilla, desde varios dispositivos móviles. 
+**Probado en:**   Google Chrome, Microsoft Edge, safari, Mozilla, desde varios dispositivos móviles: Iphone, samsung y xaomi. 
 
 **Tamaño proyecto:** 51.1 MB
 
@@ -31,8 +31,7 @@ Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de 
 
 **Fecha** : 14/05/2020
 
-**Medios** (donde se tiene presencia relacionada):
-
+**Medios** 
 - Github: https://github.com/Mairendon
 - Twitter: @IronMairen
 - Instagram: mairythopia
