@@ -90,9 +90,11 @@ Mi afan por conocer el espacio y lo que me oculta. Desde siempre al ser humano l
 
 (qué soluciones has planteado y cómo se han resuelto: juego, galería de fotos, grabación de video, etc.)
 
-- Juego. 
-- Video 
-- Instrucciones y ayuda al usuario 
+- Juego: para este apartado se me ocurrieron hacer dos modos, uno más interactivo y otro más educativo. He hecho un código secreo con varias pistas y un quiz donde cada vez que se acierte se gana un punto, si se va a lo loco con los fallos se pierden puntos, para hacerlo más notorio lo he puesto en negativo. Pero por el contrario si se recapacita y se pide ayuda se gana puntos. 
+
+- Video: Tuve un pequeño problema con uno de los vídeos por lo que opté por descargarlo, editarlo y poner el momento justo. También añadí el enlace para verlo completo en youtuve. 
+
+- Instrucciones y ayuda al usuario: 
 - Menús y elementos de navegación (botones)
 - etc.
 
@@ -101,7 +103,7 @@ Mi afan por conocer el espacio y lo que me oculta. Desde siempre al ser humano l
 ### Etapa 3: Problemas identificados
 
 
-Posiblemente uno de los problemas es que el proyecto no es tan intuitivo como debería ser, estoy trabajando por lograr este objetivo. 
+Posiblemente uno de los problemas es que el proyecto no es tan intuitivo como debería ser, estoy trabajando por lograr este objetivo. He compartido el enlace con varios usuarios para probarlo en diferentes dispositivos -móviles y tablets- y varios navegadores. 
 
 
 
