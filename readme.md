@@ -95,8 +95,8 @@ Mi afan por conocer el espacio y lo que me oculta. Desde siempre al ser humano l
 
 - Video: Tuve un pequeño problema con uno de los vídeos por lo que opté por descargarlo, editarlo y poner el momento justo. También añadí el enlace para verlo completo en youtuve. 
 
-- Instrucciones y ayuda al usuario: 
-- Menús y elementos de navegación (botones)
+- Instrucciones y ayuda al usuario: He añadido varios textos para indicar de qué hace, o a donde van los diferentes botones y en los juegos unas pequñas instrucciones para saber cómo funcionan.  
+- Menús y elementos de navegación (botones): He intentado hacer los botones variados e intuitivos, les he añadido texto cómo he dicho anteriormente, sobre todo para los usuarios de dispositivos móviles. 
 - etc.
 
 
@@ -114,10 +114,7 @@ También otro problema era con la fuente del inicio que se solucionó al cambiar
 
 Supongo que me gustarí explorar más y conocer mucho mejor las posibilidades que se abren con el html. Creo que a mi proyecto le falta mucho por avanzar pero actualmente me gusta cómo lo he plasmado. 
 Quería hacer una especie de documental y no un porfolio porque siendo sincera y realista mi "yo" actual no se sentiría identificado con lo que hubiese en está página por lo que me siento mejor al investigar y explorar esté tema que desde siempre me ha llamado. 
-Me gustaría mejor sobre todo la imagen, y forma en la que se ha dispuesto todo, a una más sencilla y mucho más intuitiva. 
-(explica brevemente tu valoración, problemas que has detectado y que te gustaría hacer o mejorar en el futuro )
-
-
+Me gustaría mejor sobre todo la imagen, y forma en la que se ha dispuesto todo, a una más sencilla y mucho más intuitiva. Pero sobre todo mucho más desarrollada la idea inicial. 
 
 # 5 Referencias 
 
@@ -132,6 +129,7 @@ Me gustaría mejor sobre todo la imagen, y forma en la que se ha dispuesto todo,
 * Musica: Preludio a la siesta de un fáuno  
 * Imágenes: Pertenecientes a la Nasa y al observatorio Astrohita
 * Tipografía: Mella Nisa (dafont) y Noto Sans TC (google fonts)
+* Vídeo: Pertenecienta a Stuck In the Sound y otro a Deep1space
 
 **Herramientas utilizadas**
 
