@@ -43,7 +43,7 @@ Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de 
 # 2. Memoria del proyecto 
 
 ### 2.1 Storyboard: 
-
+Empieza en una pantalla de carga donde podemos ir a los créditos o al lanzador. Desde los céditos se va al lanzdor. Desde el lanzador se puede ir a cualquier punto, por lo que podemos decir que está todo centralizado.
 
 ![story](https://github.com/Mairendon/Mairendon.github.io/blob/master/Story.png)
 
