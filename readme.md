@@ -1,4 +1,4 @@
-## (Nombre del proyecto)
+## BloodPact
 
 Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de la Univesidad de Granada
 
@@ -8,62 +8,58 @@ Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de 
 
 
 
-**Titulo** : MI Proyecto(nombre)
+**Titulo** : BloodPact
 
-**Web:**   (url github.io)
+**Web:**   https://sara-hedgehog.itch.io/bloodpact
 
-**Autor:**  (Nombre apellidos)
+**Autor:**  Inés Jiménez Vargas
 
-**Resumen** : Este proyecto busca contar las hitorias de migrantes jóvenes, siendo ellos mismos los protagonistas. Esta será una compilación de relatos y crónicas de sus experiencias, exponiendo su lucha de identidad y sentido de pertenencia, herencia migratoria, entre otros temas que abrirán un debate del tema.
+**Resumen** : La vida de Alex cambiará cuando se vea obligado a pactar con una criatura sanguinaría.
 
-**Estilo/género:**  Novela / juego / portfolio / documental... etc.
+**Estilo/género:**  Visual Novel
 
-**Logotipo** : (insertar imagen y breve justificación, si  tiene) 
+**Logotipo** : 
 
-(insertar imágenes a resolucion de 100px alto)
 
-**Resolución:** 800x600px responsivo/o tamaño fijo (indicar la que has aplicado, y si es reescalable)
 
-**Probado en:**   (indicar dónde has probado que funciona: ej. Google Chrome / MS Edge... /móviles android )
+![Bloodpact Letras](https://github.com/user-attachments/assets/cdae70b4-b111-4dbd-8b62-ea89ffe2bd7e)
 
-**Tamaño proyecto:** 14MB 
+**Resolución:** 800x600px
+
+**Probado en:**   Google Chrome
 
 **Licencia** Este proyecto tiene una Licencia CC Reconocimiento Compartir igual (CC BY-SA)
 
-**Fecha** : 14/05/2020
+**Fecha** : 25/05/2025
 
 **Medios** (donde se tiene presencia relacionada):
 
-- Github:
-- Twitter
-- Instagram
+- Github: Sara-hedgehog
+- Instagram: Sara_hedgeho
 
-
-![girl](https://github.com/mgea/cmi20/blob/master/WalkingGirl_front01.png)
 
 # 2. Memoria del proyecto 
 
-### 2.1 Storyboard: 
+### 2.1 Storyboard: Teaser
+
+![Captura de pantalla 2025-05-25 193141](https://github.com/user-attachments/assets/3c22bdb5-8f6f-4ca9-9a23-d013fe0b4f8c)
 
 
 
-(narra brevemente lo que sucede en tu proyecto, puedes usar 3-4 imágenes de apoyo)
 
 
 
 ### 2.2. Esquema de navegación 
 
-
-
-(imagen con las distintas pantallas de navegación, usa draw.io o cualquier programa de dibujo)
-
+[Captura de pantalla 2025-05-25 193406](https://github.com/user-attachments/assets/262f36b3-988c-4fd7-a559-6abd78aa9080)
 
 
 
 
 
 
-# 3. Metodología
+
+
 
 Metodología de desarrollo de productos multimedia basado en una metodología de UX (User Experience)
 
@@ -71,76 +67,63 @@ Metodología de desarrollo de productos multimedia basado en una metodología de
 
 ### Etapa 1: Ideación de proyecto
 
-**Investigación de campo** (propuestas inspiradoras para el proyecto)
 
-- Portfolio [Leonardi Web page](http://www.rleonardi.com/interactive-resume/) para idear cómo organizar el material
-- 
+Para la realización de este trabajo decidí partir de de la historia de un comic que estoy realizando, aprovechándo que el capítulo 1 de este comic ya lo había terminado ví una buena oportunidad de adaptar dicha historia a una novela visual, de modo que ya tendría la historia hecha al igual que el diseño de los personajes.
+No obstante modifiqué la trama del capítulo para que se ajustase mejor a las fechas de entrega, y por probar a implementar la toma de decisiones de varias novelas visuales.
+
 
 
 
 **Motivación de la propuesta** 
 
-Este  proyecto es interesante porque ... 
-
-
-
-**Publico / audiencia**
-
-- Orientado a 
-
+Esta idea me motivo por tener la oportunidad de trabajar en un género de videojuegos que me llama la atención, así como seguir desarrollando historia perteneciente a mi cómic.
 
 
 
 
 ### Etapa 2: Desarrollo / actividades realizadas
 
-(qué soluciones has planteado y cómo se han resuelto: juego, galería de fotos, grabación de video, etc.)
 
-- Juego. 
-- Video 
-- Instrucciones y ayuda al usuario 
-- Menús y elementos de navegación (botones)
-- etc.
+- Juego: En el apartado de juego tuve varios problemas al principio, sobre todo porque no entendía como funcionaban los sprites de los personajes de Dialogic para que se visualizasen como si fuera una novela visual, no obstante, gracias a la ayuda de varios compañeros, conseguí hacer que esta función actuase como tenía planeado. Por lo demás, los demás apartados del gameplay no me presentaron muchas dificultades.
+
+- Video: Con los vídeos de la galería no tuve gran problema, aunque la primera vez que incluí el vídeo no se introducía en el programa, pero fue un error que arreglé fácilmente.
+  
+- Audio: En general no tuve problemas de audio, aunque tuve bastantes complicaciones para poner la música global, este es el apartado que acabó llevándose más tiempo en mi proyecto, pues no entendía el funcionamiento del apartado "Global" en Godot.
+
+- Otras interfaces: Centrándome principalmente en los botones, estos funcionan correctamente, a dichos botones les añadí sonido para cuando un ratón pasa por encima de ellos, y al mismo tiempo el cursor cambia de aspecto en esta faceta. Me hubiera gustado implementarles un cambio de aspecto a los botones cuando son cliclados, pero al estar hechos con una plantilla no sabía como realizar esta función.
 
 
 
 ### Etapa 3: Problemas identificados
 
-(que consideras que no  funciona correctamente y por qué )
+
+A lo largo de este proyecto me encontré con varios problemas, (en principio todos se encontrarían actualmente solucionados), entre ellos el más destacable sería un error que me dió Diologic, pues me colapsó el programa, generandome un error que me obligó a volver a mi carpeta de backup, la carpeta donde guardo el trabajo anterior, y volver a colocar los diálogos. Por lo que pude comprobar fue un error de que Godot falló, por lo que no estaba leyendo bien uno de los códigos del Script que tiene de Dialogic. Este error no se volvió a presentar.
 
 
 
 # 4. Conclusiones 
 
-(explica brevemente tu valoración, problemas que has detectado y que te gustaría hacer o mejorar en el futuro )
-
-
-
-
-
-
+Con respecto a este proyecto, creo que tiene una historia que puede llegar a estar algo apresurada y con necesidad de una mayor explicación de acontecimientos de por medio (pues me ví obligada a cortar parte de la historia para que fuese plausible para la entrega). No obstante, estoy bastente contenta con el resultado del proyecto, me gustaría seguir investigando las posibilidades de Godot, y posiblemente a futuro (con una intención personal) seguir trabajando en esta novela visual, así como trabajar en varios proyectos audiovisuales con dicho programa.
 
 # 5 Referencias 
 
-**Artículos y blogs ** 
+A la hora de inspirarme a la hora de hacer este juego me inspiré principalente en novelas visuales, entre ellas "Doki Doki Literature Club" y "Slay the princess"
 
-- Crofts, S., Fox, M., Retsema, A. and Williams, B. (2005) *Podcasting: A new technology in search of viable business models*First Monday, 10(9). https://doi.org/10.5210/fm.v10i9.1273. Recuperado el 8 de abril de 2020 de: https://journals.uic.edu/ojs/index.php/fm/article/view/1273/1193
+![ss_3941e57f278958dd15c9855f42ab069da3a19608 1920x1080](https://github.com/user-attachments/assets/176c956b-6050-4412-9b30-d079eb8d8913)
+
+![Slay_the_Princess_03-1200x675](https://github.com/user-attachments/assets/38f84be2-d1d6-4ac4-9a80-0ed3869b603f)
+
 
 **Recursos y materiales audiovisuales:**
 
-* Musica:  
-* Imágenes:  
-* Tipografía
+* Musica: La música principal del juego es una grabación de una caja de música que tengo en mi casa.
+* Botones: Flare Buttons por Blarumyrran
+* Tipografía: The Zombie Birds (dafont) y THENIGHTLAMP (dafont)
+* Vídeo: "Hex Girls" de Scooby Doo y "Moon vidio" (videos de stock)
 
 **Herramientas utilizadas**
 
-- Hippani Animator 5.1
-- 
+- Clip Studio (assets)
+- Godot 4.4
 
-
-
-(imagen de la licencia, copiar y pegar aquí la correcta)
-
-https://creativecommons.org/licenses/?lang=es
-
-Mayo 2023
+Mayo 2025
