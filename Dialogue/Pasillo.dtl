@@ -1,0 +1,47 @@
+[background arg="res://Assets/Pasillo.png" fade="0.0"]
+[sound path="res://music/EFECTODESONIDOPASOS.mp3" volume="0.0"]
+[wait time="2.0"]
+join Alex left
+join Angela right
+Angela (hablando): Sí… Mi padre se mudó aquí por trabajo…  Pero, entre reuniones y viajes, apenas lo veo. No conozco a nadie… si te soy sincera
+Alex (hablando): Eso suena... difícil. Yo… sé lo que eso de no tener a muchos con quienes hablar. Aunque… no es tan malo.
+update Alex (sonrisa)
+[wait time="0.8"]
+Alex (hablando): Pero rompiste tu racha, hablas conmigo, no se si eso suma o baja puntos en el marcador social… pero es algo.
+Angela (alegre): jijijiji
+Angela: ¿Importa? Me interesa relacionarme con gente interesante… si no… todo sería gris. ¿No crees?
+[wait time="1.0"]
+Alex (pensativo): ¿Has sacado eso de un poster de gatos o qué?
+Angela (hablando): De hecho…Sí. Eres interesante… eres directo. Pero ocultas algo… ¡Creo que nos vamos a llevar bien!
+update Alex (riendose)
+[wait time="1.5"]
+Alex (hablando): Dijiste que no conocías a nadie, este finde voy con un amigo a ver Space Odyssey, no se si quieres venir…
+update Angela (default)
+[wait time="2.5"]
+Alex (pensativo): ...¿Dije algo prohibido?N…no tienes que venir sí no…
+Angela (emocionada): ¡BROMEAS! SOY LA MAYOR FAN DE SPACE ODYSSEY DE LA HISTORIA!
+Angela: ¡He visto cada película, serie o anuncio desde los sesenta! Me se de memoria las líneas, los planos, cada versión pérdida, recortada o extendida… hasta las teorías de Reddit.
+update Alex (sonrisa) [length="0.3"]
+Angela (emocionada): ¡Rápido! ¡Dime tu momento favorito!
+¿Qué quieres hacer?
+- [Decir la verdad: “Nunca la he visto”
+	Alex (suspirando): No la he visto aún.
+	Alex (hablando): La verdad… este finde será mi primera vez.
+	[wait time="1.5"]
+	Angela (emocionada): ¡Eso es increíble!  Vas a verla por primera vez… ¡ni te imaginas la experiencia!\
+Prométeme que la vas a ver con los ojos bien abiertos. Nada de dormirse, menos  en la parte del monolito.
+	Alex (riendose): Te lo juro. Ni un parpadeo.
+- Mentir: “Todas son mis favoritas”
+	Alex (pensativo): Creo que mi parte favorita es cuando…. Está ese agujero espacial y… el protagonista se sacrifica, quedando atrapado y… se ve a sí mismo de joven… Sí…
+	[wait time="1.5"]
+	Angela (confundida): ¿Qué?
+	Angela: Vaya… eso fue… muy valiente.
+	Alex (riendose): ¿Estuve cerca?
+	Angela (alegre): Para nada… ni por asomo. Pero… ey, me gusta, podría ser un spin-off.
+	Alex (pensativo): ¿Tú crees?
+	Angela (alegre): Sí.
+	update Alex (riendose)
+	[wait time="1.5"]
+Angela (alegre): ¡Vamos! No lleguemos tarde…  Aunque… me lo paso mejor dando vueltas que en clase…
+update Alex (sonrisa)
+[signal arg="fin"]

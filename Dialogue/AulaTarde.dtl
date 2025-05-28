@@ -1,0 +1,27 @@
+[background arg="res://Assets/Aulatarde.png" fade="0.0"]
+[Más tarde…]
+join Alex left
+Alex (default): Mira que olvidar el maldito libro… Clásico de mí… soy simplemente gafe.
+Alex (pensativo): ¿Eh?
+join Angela right [mirrored="true"]
+Angela: ...........
+Angela (hablando): ..........Parece que va a llover…
+Alex (pensativo): (¿Otra vez ella? ¿Lleva todo el día siguiéndome o qué?)
+¿Qué quieres hacer?
+- Saludarla
+	Alex (pensativo): Eh… hola.
+	Angela (default): .........................
+	Angela (hablando): Las nubes se arrastran como bestias dormidas. El velo del día muere, y la noche llama a sus hijos… sangre, un festín de sangre. Ese es el pacto que se ha de recordar.
+	Alex (default): (…Vale. Eso fue rarísimo. ¿Está recitando poesía gótica?)
+- Tomar el libro e irte
+	Alex (default): (Sólo toma el libro. Ni mirarla. No hables con la rara. Hoy no.)
+[wait time="2.0"]
+update Alex right [animation="Shake X" mirrored="true"]
+update Angela left [animation="Tada" mirrored="true"]
+Alex (sorprendido 2): ¡¿Pero qué…?! ¿Cómo has…?
+Angela (alegre): ¡Oh! No te había visto. Me perdí buscando el aula de Biología. Alex. ¿Verdad? Soy Ángela… ¿Podrías orientarme?Es que soy nueva… jaja…
+Alex (hablando): Eh… sí, claro. Justo iba hacia allí.
+Angela (emocionada): ¡Qué suerte tengo! ¡Gracias! ¡Eres un encanto!
+Alex: No hay de que…
+Alex (pensativo): (No recuerdo haberle dicho mi nombre…)
+[signal arg="fin"]

@@ -1,0 +1,37 @@
+[background arg="res://Assets/Bajolalluvia.png" fade="0.0"]
+[wait time="2.0"]
+Alex (sorprendido): ¿Eh?
+[wait time="2.0"]
+¡Vamos! ¡Corre, corre!
+[background arg="res://Assets/Interiorcobertizo.png" fade="0.0"]
+join Alex (suspirando) center
+[wait time="2.0"]
+Alex (suspirando): Uf… eso fue
+Alex (default): (La puerta se ha atascado)
+Alex (pensativo): …Ángela… ¿dónde estás?
+leave Alex
+[background arg="res://Assets/Angelacobertizo.png" fade="0.0"]
+[wait time="2.0"]
+Alex: ¿Á…Ángela? ¿Qué… qué estás haciendo?
+Angela: Es una pena, me caes bien presa, pero aquí acaba todo
+Alex: ¿Qué?
+[music path="res://music/efecto de sonido TRUENO.mp3" fade="0.0" volume="0.0" loop="false"]
+[background arg="res://Assets/AlexyAngela.png" fade="0.0"]
+[wait time="2.0"]
+Angela: Sí, en verdad sería una lástima...
+Angela: Preferiría dejarte vivir, pero el clan me asigno tu caza.
+Angela: ¿Qué te parece si hacemos un pacto?
+Angela: Un poderoso, sellado con sangre, así no tendrás que morir.
+Angela: ¿Qué me dices?
+Angela: ¿Aceptas la propuesta de Ángela?
+- Aceptar
+	[background arg="res://Assets/Finalbueno.png" fade="0.0"]
+	[wait time="1.0"]
+	Angela: Muy bien, este es nuestro pacto de sangre, Alex.
+	[signal arg="fin"]
+- Rechazar
+	[background arg="res://Assets/Finalmalo.png" fade="0.0"]
+	[wait time="1.0"]
+	Angela: Ya veo, no confías en mis palabras.
+	Angela: Ha sido un gusto conocerte.
+	[signal arg="fin"]

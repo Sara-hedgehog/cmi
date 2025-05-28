@@ -1,0 +1,35 @@
+[Bullicio]
+Chica: jijiijiji, mira, ahí va el cuernitos otra vez...
+Chico: Agh…¿sigue este año también? ¿Cuándo se va?
+Chica: Su madre es médico y tiene los mismos cuernos, dicen que disfruta de descuartizar a la-
+Chico: -y que esconden los cuerpos en el jardín
+Alex (default): (Que sorpresa… rumores nuevos. Nunca dejan de sorprenderme. Lo que da de hablar cuatro remolinos mal puestos…)
+Juan (Sorprendido): ¡HERMANO! ¡Acabo de enterarme que las palomas no son reales!
+Alex (sorprendido): !!
+Alex (default): (Y ahí está… la única persona de este mundo que no sabe ni en qué planeta vive.)
+Alex (pensativo): Juan… ¿Has vuelto a mezclar bebidas energéticas para desayunar?
+Juan (Sorprendido): Y con cereales y todo…  ¡es la hostia!
+Juan (emocionado): ¡Pero hablemos de lo importante! ¡Marta!
+Alex (pensativo): ¿La de la otra clase? ¿La del ballet?
+Juan (chuleando): La misma, la elegida por los dioses…
+Juan (emocionado): ¡Somos pareja!
+Alex (sorprendido 2): ¡¿QUÉ?! ¡Pero si te odia!
+Juan (chuleando): Tonterías… el amor no conoce barreras, mi fiel amigo. Y este finde tenemos nuestra primera cita oficial.
+Juan (emocionado): ¡Space Odyssey! ¡Han hecho reboot! La protagonista está que flipas…
+Alex (hablando): Eso suena a excusa para ver ciencia ficción…
+Juan (chuleando): ¡Exacto!
+Juan (sospechoso): Pero… hay un pequeño problema. Marta solo aceptó si era una cita doble y tú venías…
+¿Quieres acompañar a Juan en la cita doble?
+- Aceptar (de mala gana)
+	Alex (suspirando): Está bien… veré que hacer. Pero lo hago por tí.
+	Juan (emocionado): Tío… ¡eres el mejor amigo del mundo mundial!
+- Rechazar (porque es un plan pésimo y no tienes a nadie)
+	Alex (harto): No. ¿Pensaste en esto antes de abrir la boca? ¡Soy el chico demonio! 
+	Juan (sospechoso): Vaaale… no te pongas así. Pero lo demoniaco tiene su rollo…
+¡Juan! ¡Alex! ¿Quieren compartir su interesante conversación con toda la clase?
+Juan (susurrando): ¿Día uno y ya nos regañan? Estamos rompiendo récords.
+Silencio, por favor. Hoy damos la bienvenida a una nueva compañera… Saluda, Ángela.
+Alex (default): …¿Qué demonios…? ¿De dónde sale esta flipada?
+Juan (Sorprendido): Tío… ¿has visto eso? A eso lo llamo devorar con la mirada… ¡Han saltado chispas!
+Alex: ................................................................................... Cállate.
+[signal arg="fin"]
