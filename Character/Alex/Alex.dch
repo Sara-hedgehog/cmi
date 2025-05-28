@@ -1,0 +1,101 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "Estilo1"
+},
+&"default_portrait": "default",
+&"description": "",
+&"display_name": "Alex",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"default": {
+"export_overrides": {
+"image": "\"res://Character/Alex/Alex default.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"hablando": {
+"export_overrides": {
+"image": "\"res://Character/Alex/Alex hablando.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"harto": {
+"export_overrides": {
+"image": "\"res://Character/Alex/Alex harto.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"pensativo": {
+"export_overrides": {
+"image": "\"res://Character/Alex/Alex pensativo.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"riendose": {
+"export_overrides": {
+"image": "\"res://Character/Alex/Alex riendose.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sonrisa": {
+"export_overrides": {
+"image": "\"res://Character/Alex/Alex sonrisa.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sorprendido": {
+"export_overrides": {
+"image": "\"res://Character/Alex/Alex sorprendido.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sorprendido 2": {
+"export_overrides": {
+"image": "\"res://Character/Alex/Alex sorprendido 2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"suspirando": {
+"export_overrides": {
+"image": "\"res://Character/Alex/Alex suspirando.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}
