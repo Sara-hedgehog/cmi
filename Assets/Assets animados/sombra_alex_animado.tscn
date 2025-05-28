@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3pr7wuuyjn15"]
+
+[ext_resource type="Texture2D" uid="uid://ctf4y52y1h61e" path="res://Assets/Sombra Alex.png" id="1_povxg"]
+[ext_resource type="Texture2D" uid="uid://drf6vfrffm8yr" path="res://Assets/Sombra Alex 2.png" id="2_et8b3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jak42"]
+animations = [{
+"frames": [{
+"duration": 2.5,
+"texture": ExtResource("1_povxg")
+}, {
+"duration": 2.5,
+"texture": ExtResource("2_et8b3")
+}],
+"loop": true,
+"name": &"Sombra_Alex_animado",
+"speed": 5.0
+}]
+
+[node name="Sombra_Alex_animado" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 1)
+scale = Vector2(1.54167, 1.54167)
+sprite_frames = SubResource("SpriteFrames_jak42")
+animation = &"Sombra_Alex_animado"
+autoplay = "Sombra_Alex_animado"
+frame = 1
+frame_progress = 1.0

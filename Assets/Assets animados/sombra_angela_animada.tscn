@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://b18s4yd57m0th"]
+
+[ext_resource type="Texture2D" uid="uid://d0va81a65ygsr" path="res://Assets/Sombra Angela png.png" id="1_l7q00"]
+[ext_resource type="Texture2D" uid="uid://brxj7lqt6uby3" path="res://Assets/Sombra angela 2.png" id="2_8jxe3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vj7n8"]
+animations = [{
+"frames": [{
+"duration": 2.5,
+"texture": ExtResource("2_8jxe3")
+}, {
+"duration": 2.5,
+"texture": ExtResource("1_l7q00")
+}],
+"loop": true,
+"name": &"Sombra_Angela_animada",
+"speed": 5.0
+}]
+
+[node name="Sombra_Angela_animada" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, 0)
+scale = Vector2(1.42634, 1.42634)
+sprite_frames = SubResource("SpriteFrames_vj7n8")
+animation = &"Sombra_Angela_animada"
+autoplay = "Sombra_Angela_animada"
+frame_progress = 0.73769
