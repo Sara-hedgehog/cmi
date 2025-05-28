@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7s54u20xsq02"
+path="res://.godot/imported/young people talking sound effect.mp3-88680e06bd005747f5373a59e25e5bb6.mp3str"
+
+[deps]
+
+source_file="res://music/young people talking sound effect.mp3"
+dest_files=["res://.godot/imported/young people talking sound effect.mp3-88680e06bd005747f5373a59e25e5bb6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

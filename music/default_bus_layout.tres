@@ -1,0 +1,19 @@
+[gd_resource type="AudioBusLayout" load_steps=4 format=3 uid="uid://d3cxfyk8g4l1m"]
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_j3pel"]
+resource_name = "Reverb"
+
+[sub_resource type="AudioEffectDelay" id="AudioEffectDelay_j3pel"]
+resource_name = "Delay"
+
+[sub_resource type="AudioEffectFilter" id="AudioEffectFilter_j3pel"]
+resource_name = "Filter"
+
+[resource]
+bus/0/volume_db = -15.2046
+bus/0/effect/0/effect = SubResource("AudioEffectReverb_j3pel")
+bus/0/effect/0/enabled = true
+bus/0/effect/1/effect = SubResource("AudioEffectDelay_j3pel")
+bus/0/effect/1/enabled = false
+bus/0/effect/2/effect = SubResource("AudioEffectFilter_j3pel")
+bus/0/effect/2/enabled = false

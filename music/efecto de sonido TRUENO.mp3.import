@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cim3kxnyy0jl6"
+path="res://.godot/imported/efecto de sonido TRUENO.mp3-967ffe46ea6e24fc907bdef962f80a9d.mp3str"
+
+[deps]
+
+source_file="res://music/efecto de sonido TRUENO.mp3"
+dest_files=["res://.godot/imported/efecto de sonido TRUENO.mp3-967ffe46ea6e24fc907bdef962f80a9d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
