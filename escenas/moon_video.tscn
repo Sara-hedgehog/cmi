@@ -1,0 +1,160 @@
+[gd_scene load_steps=11 format=3 uid="uid://d27p47mmga2go"]
+
+[ext_resource type="Script" uid="uid://dywerc3duntvg" path="res://gd/moon_video.gd" id="1_1ot6r"]
+[ext_resource type="Texture2D" uid="uid://dftvvuy3y1om3" path="res://Assets/Fondo rojo gris.png" id="1_drky3"]
+[ext_resource type="VideoStream" uid="uid://guhcfipspqcd" path="res://Videos/854739-hd_1920_1080_30fps.ogv" id="2_1ot6r"]
+[ext_resource type="Texture2D" uid="uid://buv5dej0ia122" path="res://Assets/Button.png" id="3_fgq1w"]
+[ext_resource type="Texture2D" uid="uid://ddi3fejaksy6i" path="res://Assets/Flecha.png" id="4_bupto"]
+[ext_resource type="FontFile" uid="uid://b30c1fih5l3hh" path="res://fonts/THENIGHTLAMP.ttf" id="5_sywdt"]
+[ext_resource type="AudioStream" uid="uid://q8xjah5rwxef" path="res://music/pasar_encima_button.mp3" id="6_fgq1w"]
+[ext_resource type="AudioStream" uid="uid://dchf8xklt234e" path="res://music/Click_Button.mp3" id="7_bupto"]
+[ext_resource type="Texture2D" uid="uid://dj632k2nq67qy" path="res://Assets/Start.png" id="10_v4hoh"]
+[ext_resource type="Texture2D" uid="uid://baus3nv1hnlaw" path="res://Assets/Pause.png" id="11_ltbkv"]
+
+[node name="Moon_video" type="Node2D"]
+script = ExtResource("1_1ot6r")
+
+[node name="FondoRojoGris" type="Sprite2D" parent="."]
+position = Vector2(576, 344)
+texture = ExtResource("1_drky3")
+
+[node name="Moon_video" type="VideoStreamPlayer" parent="FondoRojoGris"]
+offset_left = -575.0
+offset_top = -342.0
+offset_right = 575.0
+offset_bottom = 304.0
+stream = ExtResource("2_1ot6r")
+autoplay = true
+expand = true
+
+[node name="TextureButtonAtras" type="TextureButton" parent="."]
+offset_left = 40.0
+offset_top = 25.0
+offset_right = 265.0
+offset_bottom = 77.0
+mouse_default_cursor_shape = 3
+
+[node name="ButtonAtras" type="Sprite2D" parent="TextureButtonAtras"]
+position = Vector2(112, 152)
+scale = Vector2(0.241211, 0.975)
+texture = ExtResource("3_fgq1w")
+
+[node name="FlechaAtras" type="Sprite2D" parent="TextureButtonAtras/ButtonAtras"]
+position = Vector2(-1.29553, -133.333)
+scale = Vector2(0.915365, 0.112472)
+texture = ExtResource("4_bupto")
+
+[node name="Encima_button" type="AudioStreamPlayer" parent="TextureButtonAtras"]
+stream = ExtResource("6_fgq1w")
+volume_db = -15.928
+
+[node name="Click_Button" type="AudioStreamPlayer" parent="TextureButtonAtras"]
+stream = ExtResource("7_bupto")
+
+[node name="TextureButtonSiguiente" type="TextureButton" parent="."]
+offset_left = 884.0
+offset_top = 25.0
+offset_right = 1109.0
+offset_bottom = 77.0
+mouse_default_cursor_shape = 3
+
+[node name="ButtonSiguiente" type="Sprite2D" parent="TextureButtonSiguiente"]
+position = Vector2(113, 152)
+scale = Vector2(0.241211, 0.975)
+texture = ExtResource("3_fgq1w")
+
+[node name="FlechaSiguiente" type="Sprite2D" parent="TextureButtonSiguiente/ButtonSiguiente"]
+position = Vector2(-1.29553, -133.333)
+scale = Vector2(0.915365, 0.112472)
+texture = ExtResource("4_bupto")
+flip_h = true
+
+[node name="Encima_button" type="AudioStreamPlayer" parent="TextureButtonSiguiente"]
+stream = ExtResource("6_fgq1w")
+volume_db = -15.928
+
+[node name="Click_Button" type="AudioStreamPlayer" parent="TextureButtonSiguiente"]
+stream = ExtResource("7_bupto")
+
+[node name="TextureButtonVolver" type="TextureButton" parent="."]
+offset_left = 36.0
+offset_top = 577.0
+offset_right = 261.0
+offset_bottom = 629.0
+mouse_default_cursor_shape = 3
+
+[node name="ButtonVolver" type="Sprite2D" parent="TextureButtonVolver"]
+position = Vector2(114, 155)
+scale = Vector2(0.241211, 1)
+texture = ExtResource("3_fgq1w")
+
+[node name="LabelBack" type="Label" parent="TextureButtonVolver"]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 5.0
+offset_right = 150.0
+offset_bottom = 57.0
+theme_override_fonts/font = ExtResource("5_sywdt")
+theme_override_font_sizes/font_size = 39
+text = "BACK"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Encima_button" type="AudioStreamPlayer" parent="TextureButtonVolver"]
+stream = ExtResource("6_fgq1w")
+volume_db = -15.928
+
+[node name="Click_Button" type="AudioStreamPlayer" parent="TextureButtonVolver"]
+stream = ExtResource("7_bupto")
+
+[node name="TextureButtonPaused" type="TextureButton" parent="."]
+offset_left = 925.0
+offset_top = 548.0
+offset_right = 1017.0
+offset_bottom = 641.0
+mouse_default_cursor_shape = 3
+
+[node name="Encima_button" type="AudioStreamPlayer" parent="TextureButtonPaused"]
+stream = ExtResource("6_fgq1w")
+volume_db = -15.928
+
+[node name="Click_Button" type="AudioStreamPlayer" parent="TextureButtonPaused"]
+stream = ExtResource("7_bupto")
+
+[node name="Pause" type="Sprite2D" parent="TextureButtonPaused"]
+position = Vector2(46, 52)
+scale = Vector2(0.560748, 0.560748)
+texture = ExtResource("11_ltbkv")
+
+[node name="TextureButtonSart" type="TextureButton" parent="."]
+offset_left = 1022.0
+offset_top = 551.0
+offset_right = 1114.0
+offset_bottom = 644.0
+mouse_default_cursor_shape = 3
+
+[node name="Encima_button" type="AudioStreamPlayer" parent="TextureButtonSart"]
+stream = ExtResource("6_fgq1w")
+volume_db = -15.928
+
+[node name="Click_Button" type="AudioStreamPlayer" parent="TextureButtonSart"]
+stream = ExtResource("7_bupto")
+
+[node name="Start" type="Sprite2D" parent="TextureButtonSart"]
+position = Vector2(41, 46)
+scale = Vector2(0.479624, 0.479624)
+texture = ExtResource("10_v4hoh")
+
+[connection signal="mouse_entered" from="TextureButtonAtras" to="." method="_on_texture_button_atras_mouse_entered"]
+[connection signal="pressed" from="TextureButtonAtras" to="." method="_on_texture_button_atras_pressed"]
+[connection signal="ready" from="TextureButtonAtras/Click_Button" to="." method="_on_click_button_ready"]
+[connection signal="mouse_entered" from="TextureButtonSiguiente" to="." method="_on_texture_button_siguiente_mouse_entered"]
+[connection signal="pressed" from="TextureButtonSiguiente" to="." method="_on_texture_button_siguiente_pressed"]
+[connection signal="ready" from="TextureButtonSiguiente/Click_Button" to="." method="_on_click_button_ready"]
+[connection signal="mouse_entered" from="TextureButtonVolver" to="." method="_on_texture_button_volver_mouse_entered"]
+[connection signal="pressed" from="TextureButtonVolver" to="." method="_on_texture_button_volver_pressed"]
+[connection signal="ready" from="TextureButtonVolver/Click_Button" to="." method="_on_click_button_ready"]
+[connection signal="mouse_entered" from="TextureButtonPaused" to="." method="_on_texture_button_paused_mouse_entered"]
+[connection signal="pressed" from="TextureButtonPaused" to="." method="_on_texture_button_paused_pressed"]
+[connection signal="mouse_entered" from="TextureButtonSart" to="." method="_on_texture_button_sart_mouse_entered"]
+[connection signal="pressed" from="TextureButtonSart" to="." method="_on_texture_button_sart_pressed"]

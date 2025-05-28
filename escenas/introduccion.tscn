@@ -1,0 +1,120 @@
+[gd_scene load_steps=21 format=3 uid="uid://bme7fad8opng0"]
+
+[ext_resource type="Script" uid="uid://ciau3ho1fc80h" path="res://gd/Introduccion.gd" id="1_8j0pk"]
+[ext_resource type="Texture2D" uid="uid://bko6wagfy00io" path="res://Assets/Fondo rojo.png" id="2_4oipg"]
+[ext_resource type="Texture2D" uid="uid://di6aqaoho3ivs" path="res://Assets/Sombra Angela.png" id="3_2nacj"]
+[ext_resource type="Script" uid="uid://ffsn7khrc4wj" path="res://gd/sombra_angela.gd" id="4_kq5v7"]
+[ext_resource type="Script" uid="uid://qe1ayrlmugg8" path="res://gd/sombra_angela_2.gd" id="5_2nacj"]
+[ext_resource type="Texture2D" uid="uid://corm1sxf8bgxh" path="res://Assets/Fondo gris ocuro.png" id="5_yvm8i"]
+[ext_resource type="Script" uid="uid://bm4qa1vk4ifor" path="res://gd/fondo_gris_ocuro.gd" id="6_b8eme"]
+[ext_resource type="Texture2D" uid="uid://dfcsj0elyn37m" path="res://Assets/Fondogrisclaro.png" id="7_rv3jr"]
+[ext_resource type="Script" uid="uid://bameddlm77p6w" path="res://gd/fondo_gris_claro.gd" id="8_k63yc"]
+[ext_resource type="Script" uid="uid://bfei32c68x3ra" path="res://gd/fondo_gris_claro_2.gd" id="9_4oipg"]
+[ext_resource type="Texture2D" uid="uid://dxsrcph2ljebe" path="res://Assets/Manos.png" id="9_5205h"]
+[ext_resource type="Script" uid="uid://b3ylmniwxcvai" path="res://gd/manos.gd" id="10_yqs21"]
+[ext_resource type="Texture2D" uid="uid://dyk5v1p82rrpc" path="res://Assets/Caras.png" id="11_6hn3y"]
+[ext_resource type="Script" uid="uid://bm7b0lflpvvfk" path="res://gd/caras.gd" id="12_ant0n"]
+[ext_resource type="Script" uid="uid://c3jn6wbvvr1u7" path="res://gd/caras_2.gd" id="13_2lu2w"]
+[ext_resource type="Script" uid="uid://b6b511mgr2rsh" path="res://gd/caras_3.gd" id="14_4ht17"]
+[ext_resource type="AudioStream" uid="uid://q8xjah5rwxef" path="res://music/pasar_encima_button.mp3" id="17_cf50m"]
+[ext_resource type="Texture2D" uid="uid://buv5dej0ia122" path="res://Assets/Button.png" id="17_egltw"]
+[ext_resource type="FontFile" uid="uid://b30c1fih5l3hh" path="res://fonts/THENIGHTLAMP.ttf" id="18_4lgn1"]
+[ext_resource type="AudioStream" uid="uid://dfl0t8tvxgnfa" path="res://music/Musica inicio.mp3" id="19_gsfr1"]
+
+[node name="Introducción" type="Node2D"]
+script = ExtResource("1_8j0pk")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 7.0
+autostart = true
+
+[node name="FondoRojo" type="Sprite2D" parent="."]
+position = Vector2(571, 394)
+texture = ExtResource("2_4oipg")
+
+[node name="SombraAngela" type="Sprite2D" parent="."]
+position = Vector2(571, -791)
+texture = ExtResource("3_2nacj")
+script = ExtResource("4_kq5v7")
+
+[node name="SombraAngela2" type="Sprite2D" parent="."]
+position = Vector2(569, -495)
+scale = Vector2(1, 0.64)
+texture = ExtResource("3_2nacj")
+script = ExtResource("5_2nacj")
+
+[node name="FondoGrisOcuro" type="Sprite2D" parent="."]
+position = Vector2(568, -241)
+texture = ExtResource("5_yvm8i")
+script = ExtResource("6_b8eme")
+
+[node name="Caras" type="Sprite2D" parent="."]
+position = Vector2(634, -177)
+scale = Vector2(0.864444, 0.864444)
+texture = ExtResource("11_6hn3y")
+script = ExtResource("12_ant0n")
+
+[node name="Caras2" type="Sprite2D" parent="."]
+position = Vector2(179, -74)
+scale = Vector2(0.561111, 0.561111)
+texture = ExtResource("11_6hn3y")
+script = ExtResource("13_2lu2w")
+
+[node name="Caras3" type="Sprite2D" parent="."]
+position = Vector2(1087, -61)
+scale = Vector2(0.538889, 0.538889)
+texture = ExtResource("11_6hn3y")
+script = ExtResource("14_4ht17")
+
+[node name="FondoGrisClaro" type="Sprite2D" parent="."]
+position = Vector2(585, 108)
+texture = ExtResource("7_rv3jr")
+script = ExtResource("8_k63yc")
+
+[node name="FondoGrisClaro2" type="Sprite2D" parent="."]
+position = Vector2(575, 371)
+texture = ExtResource("7_rv3jr")
+script = ExtResource("9_4oipg")
+
+[node name="Manos" type="Sprite2D" parent="."]
+position = Vector2(586, 227)
+texture = ExtResource("9_5205h")
+script = ExtResource("10_yqs21")
+
+[node name="TextureButtonSkip" type="TextureButton" parent="."]
+offset_left = 917.0
+offset_top = 593.0
+offset_right = 1141.0
+offset_bottom = 633.0
+mouse_default_cursor_shape = 3
+
+[node name="ButtonSkip" type="Sprite2D" parent="TextureButtonSkip"]
+position = Vector2(107, 148)
+scale = Vector2(0.24707, 1)
+texture = ExtResource("17_egltw")
+
+[node name="LabelSkip" type="Label" parent="TextureButtonSkip"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = -4.0
+offset_right = 159.0
+offset_bottom = 48.0
+theme_override_fonts/font = ExtResource("18_4lgn1")
+theme_override_font_sizes/font_size = 39
+text = "SKIP"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Encima_button" type="AudioStreamPlayer" parent="TextureButtonSkip"]
+stream = ExtResource("17_cf50m")
+volume_db = -15.928
+
+[node name="MusicaInicio" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(822, -60)
+stream = ExtResource("19_gsfr1")
+volume_db = -21.791
+autoplay = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="mouse_entered" from="TextureButtonSkip" to="." method="_on_texture_button_skip_mouse_entered"]
+[connection signal="pressed" from="TextureButtonSkip" to="." method="_on_texture_button_skip_pressed"]

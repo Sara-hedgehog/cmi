@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dw8lmstjdn6ci"]
+
+[ext_resource type="Script" uid="uid://d25lo7chfqmcm" path="res://gd/caja_de_musica.gd" id="1_58kwl"]
+[ext_resource type="AudioStream" uid="uid://k1dyjmfyx5cw" path="res://music/Caja de música.mp3" id="2_s0e7e"]
+
+[node name="Caja_de_musica" type="Node2D"]
+script = ExtResource("1_58kwl")
+
+[node name="cajademusica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_s0e7e")
+volume_db = -15.619
+autoplay = true
+parameters/looping = true

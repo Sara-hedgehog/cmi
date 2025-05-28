@@ -1,0 +1,250 @@
+[gd_scene load_steps=15 format=3 uid="uid://b8ieqvrviu5fo"]
+
+[ext_resource type="Texture2D" uid="uid://dyk5v1p82rrpc" path="res://Assets/Caras.png" id="1_bbroa"]
+[ext_resource type="Script" uid="uid://ccabtfowiio8c" path="res://gd/galery.gd" id="1_pfbqk"]
+[ext_resource type="Texture2D" uid="uid://dftvvuy3y1om3" path="res://Assets/Fondo rojo gris.png" id="2_y2k66"]
+[ext_resource type="Texture2D" uid="uid://ctf4y52y1h61e" path="res://Assets/Sombra Alex.png" id="3_kld3r"]
+[ext_resource type="Texture2D" uid="uid://3ndxyqesuf5m" path="res://Assets/Decoracion 1.png" id="4_6o8ie"]
+[ext_resource type="PackedScene" uid="uid://b3pr7wuuyjn15" path="res://Assets/Assets animados/sombra_alex_animado.tscn" id="4_hv6do"]
+[ext_resource type="Texture2D" uid="uid://d1xr8moy21v5s" path="res://Assets/Marco.png" id="5_hv6do"]
+[ext_resource type="AudioStream" uid="uid://q8xjah5rwxef" path="res://music/pasar_encima_button.mp3" id="6_6o8ie"]
+[ext_resource type="Texture2D" uid="uid://dlqgy5sldj2p3" path="res://Assets/Bloodpact Letras.png" id="6_mk8vr"]
+[ext_resource type="AudioStream" uid="uid://dchf8xklt234e" path="res://music/Click_Button.mp3" id="7_hv6do"]
+[ext_resource type="Texture2D" uid="uid://dxsrcph2ljebe" path="res://Assets/Manos.png" id="8_bnfkc"]
+[ext_resource type="Texture2D" uid="uid://drf6vfrffm8yr" path="res://Assets/Sombra Alex 2.png" id="9_bnfkc"]
+[ext_resource type="FontFile" uid="uid://b30c1fih5l3hh" path="res://fonts/THENIGHTLAMP.ttf" id="9_kld3r"]
+[ext_resource type="Texture2D" uid="uid://buv5dej0ia122" path="res://Assets/Button.png" id="9_uuxu5"]
+
+[node name="galery" type="Node2D"]
+script = ExtResource("1_pfbqk")
+
+[node name="FondoRojoGris" type="Sprite2D" parent="."]
+position = Vector2(585, 307)
+texture = ExtResource("2_y2k66")
+
+[node name="Decoracion1" type="Sprite2D" parent="."]
+position = Vector2(380.5, 343.394)
+scale = Vector2(1.09914, 1.09914)
+texture = ExtResource("4_6o8ie")
+
+[node name="Sombra_Alex_animado" parent="." instance=ExtResource("4_hv6do")]
+modulate = Color(0.621524, 0.621524, 0.621524, 1)
+position = Vector2(173, 408)
+
+[node name="TextureButtonSombraAlex" type="TextureButton" parent="."]
+offset_left = 804.0
+offset_top = 352.0
+offset_right = 1103.0
+offset_bottom = 577.0
+mouse_default_cursor_shape = 2
+
+[node name="SombraAlex" type="Sprite2D" parent="TextureButtonSombraAlex"]
+position = Vector2(115, 117)
+scale = Vector2(0.379167, 0.379167)
+texture = ExtResource("3_kld3r")
+
+[node name="MarcoSombraAlex" type="Sprite2D" parent="TextureButtonSombraAlex"]
+position = Vector2(150, 114)
+scale = Vector2(0.250527, 0.250527)
+texture = ExtResource("5_hv6do")
+
+[node name="Encima_button" type="AudioStreamPlayer" parent="TextureButtonSombraAlex"]
+stream = ExtResource("6_6o8ie")
+volume_db = -15.928
+
+[node name="Click_Button" type="AudioStreamPlayer" parent="TextureButtonSombraAlex"]
+stream = ExtResource("7_hv6do")
+
+[node name="SombraAlex2" type="Sprite2D" parent="TextureButtonSombraAlex"]
+position = Vector2(213, 115)
+scale = Vector2(0.377083, 0.377083)
+texture = ExtResource("9_bnfkc")
+
+[node name="TextureButtonManos" type="TextureButton" parent="."]
+offset_left = 449.0
+offset_top = 350.0
+offset_right = 754.0
+offset_bottom = 579.0
+mouse_default_cursor_shape = 2
+
+[node name="MarcoManos" type="Sprite2D" parent="TextureButtonManos"]
+position = Vector2(152, 116)
+scale = Vector2(0.254206, 0.254206)
+texture = ExtResource("5_hv6do")
+
+[node name="Manos" type="Sprite2D" parent="TextureButtonManos/MarcoManos"]
+position = Vector2(11.8015, -94.4117)
+scale = Vector2(1.0971, 1.0971)
+texture = ExtResource("8_bnfkc")
+
+[node name="Encima_button" type="AudioStreamPlayer" parent="TextureButtonManos"]
+stream = ExtResource("6_6o8ie")
+volume_db = -15.928
+
+[node name="Click_Button" type="AudioStreamPlayer" parent="TextureButtonManos"]
+stream = ExtResource("7_hv6do")
+
+[node name="TextureButtonCaras" type="TextureButton" parent="."]
+offset_left = 801.0
+offset_top = 74.0
+offset_right = 1103.0
+offset_bottom = 300.0
+mouse_default_cursor_shape = 2
+
+[node name="MarcoCaras" type="Sprite2D" parent="TextureButtonCaras"]
+position = Vector2(153, 114)
+scale = Vector2(0.253333, 0.253333)
+texture = ExtResource("5_hv6do")
+
+[node name="Caras" type="Sprite2D" parent="TextureButtonCaras/MarcoCaras"]
+position = Vector2(31.5796, 67.1055)
+scale = Vector2(1.64035, 1.64035)
+texture = ExtResource("1_bbroa")
+
+[node name="Encima_button" type="AudioStreamPlayer" parent="TextureButtonCaras"]
+stream = ExtResource("6_6o8ie")
+volume_db = -15.928
+
+[node name="TextureButtonBloodpactLetras" type="TextureButton" parent="."]
+offset_left = 448.0
+offset_top = 72.0
+offset_right = 755.0
+offset_bottom = 304.0
+mouse_default_cursor_shape = 2
+
+[node name="MarcoBloodpactLetras" type="Sprite2D" parent="TextureButtonBloodpactLetras"]
+position = Vector2(153, 116)
+scale = Vector2(0.256111, 0.256111)
+texture = ExtResource("5_hv6do")
+
+[node name="BloodpactLetras" type="Sprite2D" parent="TextureButtonBloodpactLetras/MarcoBloodpactLetras"]
+position = Vector2(-11.7136, 7.80908)
+scale = Vector2(1.28785, 1.28785)
+texture = ExtResource("6_mk8vr")
+
+[node name="Encima_button" type="AudioStreamPlayer" parent="TextureButtonBloodpactLetras"]
+stream = ExtResource("6_6o8ie")
+volume_db = -15.928
+
+[node name="Click_Button" type="AudioStreamPlayer" parent="TextureButtonBloodpactLetras"]
+stream = ExtResource("7_hv6do")
+
+[node name="Sombra Alex" type="Label" parent="."]
+offset_left = 854.0
+offset_top = 583.0
+offset_right = 1074.0
+offset_bottom = 633.0
+theme_override_fonts/font = ExtResource("9_kld3r")
+theme_override_font_sizes/font_size = 27
+text = "Sombra Alex
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Manos2" type="Label" parent="."]
+offset_left = 519.0
+offset_top = 583.0
+offset_right = 675.0
+offset_bottom = 633.0
+theme_override_fonts/font = ExtResource("9_kld3r")
+theme_override_font_sizes/font_size = 27
+text = "Manos
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Caras2" type="Label" parent="."]
+offset_left = 858.0
+offset_top = 302.0
+offset_right = 1056.0
+offset_bottom = 354.0
+theme_override_fonts/font = ExtResource("9_kld3r")
+theme_override_font_sizes/font_size = 27
+text = "Caras"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Título" type="Label" parent="."]
+offset_left = 501.0
+offset_top = 301.0
+offset_right = 697.0
+offset_bottom = 353.0
+theme_override_fonts/font = ExtResource("9_kld3r")
+theme_override_font_sizes/font_size = 27
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButtonVolver" type="TextureButton" parent="."]
+offset_left = 36.0
+offset_top = 560.0
+offset_right = 324.0
+offset_bottom = 627.0
+mouse_default_cursor_shape = 3
+
+[node name="Button Volver" type="Sprite2D" parent="TextureButtonVolver"]
+position = Vector2(142, 197)
+scale = Vector2(0.308594, 1.26875)
+texture = ExtResource("9_uuxu5")
+
+[node name="Encima_button" type="AudioStreamPlayer" parent="TextureButtonVolver"]
+stream = ExtResource("6_6o8ie")
+volume_db = -15.928
+
+[node name="LabelVolver" type="Label" parent="."]
+offset_left = 73.0
+offset_top = 568.0
+offset_right = 290.0
+offset_bottom = 619.0
+theme_override_fonts/font = ExtResource("9_kld3r")
+theme_override_font_sizes/font_size = 39
+text = "BACK"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButton Siguiente" type="TextureButton" parent="."]
+offset_left = 31.0
+offset_top = 467.0
+offset_right = 316.0
+offset_bottom = 530.0
+mouse_default_cursor_shape = 3
+
+[node name="Button Siguiente" type="Sprite2D" parent="TextureButton Siguiente"]
+position = Vector2(148, 189)
+scale = Vector2(0.311523, 1.21094)
+texture = ExtResource("9_uuxu5")
+
+[node name="Encima_button" type="AudioStreamPlayer" parent="TextureButton Siguiente"]
+stream = ExtResource("6_6o8ie")
+volume_db = -15.928
+
+[node name="Click_Button" type="AudioStreamPlayer" parent="TextureButton Siguiente"]
+stream = ExtResource("7_hv6do")
+
+[node name="Label Siguiente" type="Label" parent="."]
+offset_left = 119.0
+offset_top = 476.0
+offset_right = 236.0
+offset_bottom = 523.0
+theme_override_fonts/font = ExtResource("9_kld3r")
+theme_override_font_sizes/font_size = 39
+text = "NEXT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="mouse_entered" from="TextureButtonSombraAlex" to="." method="_on_texture_button_sombra_alex_mouse_entered"]
+[connection signal="pressed" from="TextureButtonSombraAlex" to="." method="_on_texture_button_sombra_alex_pressed"]
+[connection signal="ready" from="TextureButtonSombraAlex/Click_Button" to="." method="_on_click_button_ready"]
+[connection signal="mouse_entered" from="TextureButtonManos" to="." method="_on_texture_button_manos_mouse_entered"]
+[connection signal="pressed" from="TextureButtonManos" to="." method="_on_texture_button_manos_pressed"]
+[connection signal="ready" from="TextureButtonManos/Click_Button" to="." method="_on_click_button_ready"]
+[connection signal="mouse_entered" from="TextureButtonCaras" to="." method="_on_texture_button_caras_mouse_entered"]
+[connection signal="pressed" from="TextureButtonCaras" to="." method="_on_texture_button_caras_pressed"]
+[connection signal="mouse_entered" from="TextureButtonBloodpactLetras" to="." method="_on_texture_button_bloodpact_letras_mouse_entered"]
+[connection signal="pressed" from="TextureButtonBloodpactLetras" to="." method="_on_texture_button_bloodpact_letras_pressed"]
+[connection signal="ready" from="TextureButtonBloodpactLetras/Click_Button" to="." method="_on_click_button_ready"]
+[connection signal="mouse_entered" from="TextureButtonVolver" to="." method="_on_texture_button_volver_mouse_entered"]
+[connection signal="pressed" from="TextureButtonVolver" to="." method="_on_texture_button_volver_pressed"]
+[connection signal="mouse_entered" from="TextureButton Siguiente" to="." method="_on_texture_button_siguiente_mouse_entered"]
+[connection signal="pressed" from="TextureButton Siguiente" to="." method="_on_texture_button_siguiente_pressed"]
+[connection signal="ready" from="TextureButton Siguiente/Click_Button" to="." method="_on_click_button_ready"]

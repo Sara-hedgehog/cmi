@@ -1,0 +1,93 @@
+[gd_scene load_steps=11 format=3 uid="uid://bej8fwrrrmr24"]
+
+[ext_resource type="Texture2D" uid="uid://dftvvuy3y1om3" path="res://Assets/Fondo rojo gris.png" id="1_ccpcd"]
+[ext_resource type="Script" uid="uid://6qj8ao1armkh" path="res://gd/credits.gd" id="1_yyts8"]
+[ext_resource type="Script" uid="uid://p45bxhfhi0r3" path="res://gd/créditos.gd" id="3_oqc4f"]
+[ext_resource type="Texture2D" uid="uid://buv5dej0ia122" path="res://Assets/Button.png" id="4_ncsgl"]
+[ext_resource type="Texture2D" uid="uid://3ndxyqesuf5m" path="res://Assets/Decoracion 1.png" id="5_mcurn"]
+[ext_resource type="AudioStream" uid="uid://q8xjah5rwxef" path="res://music/pasar_encima_button.mp3" id="6_3rwlf"]
+[ext_resource type="Texture2D" uid="uid://cfynapumo1gch" path="res://Assets/Decoracion 2.png" id="6_dix24"]
+[ext_resource type="FontFile" uid="uid://b30c1fih5l3hh" path="res://fonts/THENIGHTLAMP.ttf" id="6_rscwi"]
+[ext_resource type="AudioStream" uid="uid://dchf8xklt234e" path="res://music/Click_Button.mp3" id="7_dqp4g"]
+[ext_resource type="PackedScene" uid="uid://b18s4yd57m0th" path="res://Assets/Assets animados/sombra_angela_animada.tscn" id="11_dqp4g"]
+
+[node name="Credits" type="Node2D"]
+script = ExtResource("1_yyts8")
+
+[node name="FondoRojoGris" type="Sprite2D" parent="."]
+position = Vector2(569, 346)
+texture = ExtResource("1_ccpcd")
+
+[node name="Créditos" type="Label" parent="."]
+offset_left = 213.0
+offset_top = 677.0
+offset_right = 924.0
+offset_bottom = 1114.0
+theme_override_font_sizes/font_size = 27
+text = "Creado por
+ Inés Jiménez Vargas
+
+Creación Multimedia
+2º Grupo P 
+
+3 de abril de 2025
+
+Assets botones:
+Flare Buttons por Blarumyrran
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_oqc4f")
+
+[node name="TextureButtonVolver" type="TextureButton" parent="."]
+offset_left = 805.0
+offset_top = 27.0
+offset_right = 1116.0
+offset_bottom = 85.0
+mouse_default_cursor_shape = 3
+
+[node name="Volver" type="Sprite2D" parent="TextureButtonVolver"]
+position = Vector2(153, 194.5)
+scale = Vector2(0.333008, 1.29062)
+texture = ExtResource("4_ncsgl")
+
+[node name="Encima_button" type="AudioStreamPlayer" parent="TextureButtonVolver"]
+stream = ExtResource("6_3rwlf")
+volume_db = -15.928
+
+[node name="Click_Button" type="AudioStreamPlayer" parent="TextureButtonVolver"]
+stream = ExtResource("7_dqp4g")
+
+[node name="LabelVolver" type="Label" parent="."]
+offset_left = 835.0
+offset_top = 27.0
+offset_right = 1086.0
+offset_bottom = 89.0
+theme_override_fonts/font = ExtResource("6_rscwi")
+theme_override_font_sizes/font_size = 39
+text = "BACK"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decoracion1" type="Sprite2D" parent="."]
+position = Vector2(317, 314)
+scale = Vector2(0.702586, 0.702586)
+texture = ExtResource("5_mcurn")
+
+[node name="Decoracion2" type="Sprite2D" parent="."]
+position = Vector2(830, 310)
+scale = Vector2(0.69206, 0.69206)
+texture = ExtResource("6_dix24")
+
+[node name="Sombra_Angela_animada" parent="." instance=ExtResource("11_dqp4g")]
+modulate = Color(0.629675, 0.629675, 0.629675, 1)
+position = Vector2(1000, 427)
+
+[node name="Sombra_Angela_animada2" parent="." instance=ExtResource("11_dqp4g")]
+modulate = Color(0.629675, 0.629675, 0.629675, 1)
+position = Vector2(145, 275)
+rotation = 3.14159
+
+[connection signal="mouse_entered" from="TextureButtonVolver" to="." method="_on_texture_button_volver_mouse_entered"]
+[connection signal="pressed" from="TextureButtonVolver" to="." method="_on_texture_button_volver_pressed"]
+[connection signal="ready" from="TextureButtonVolver/Click_Button" to="." method="_on_click_button_ready"]

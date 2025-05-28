@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8xclfxl1tinv"]
+
+[ext_resource type="Texture2D" uid="uid://cfynapumo1gch" path="res://Assets/Decoracion2.png" id="1_f7olr"]
+[ext_resource type="Script" uid="uid://b75t35dj61vnl" path="res://gd/cobertizo.gd" id="1_thba7"]
+[ext_resource type="AudioStream" uid="uid://ditbvhn6yxggs" path="res://music/Sonido De Lluvia para dormir en 10 minutos..mp3" id="3_hls58"]
+
+[node name="Cobertizo" type="Node2D"]
+script = ExtResource("1_thba7")
+
+[node name="Decoracion2" type="Sprite2D" parent="."]
+position = Vector2(129, 302)
+texture = ExtResource("1_f7olr")
+
+[node name="SonidoDeLluviaParaDormirEn10Minutos_" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_hls58")
+volume_db = -20.988
+autoplay = true
+parameters/looping = true

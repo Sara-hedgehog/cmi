@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dif27hqq77nrf"]
+
+[ext_resource type="Texture2D" uid="uid://dyk5v1p82rrpc" path="res://Assets/Caras.png" id="1_i8qjk"]
+[ext_resource type="Script" uid="uid://ccrtj5tocnbwk" path="res://gd/aula_tarde.gd" id="1_veas3"]
+
+[node name="AulaTarde" type="Node2D"]
+script = ExtResource("1_veas3")
+
+[node name="Caras" type="Sprite2D" parent="."]
+position = Vector2(133, 88)
+scale = Vector2(0.238333, 0.181111)
+texture = ExtResource("1_i8qjk")

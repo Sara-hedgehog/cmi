@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2salbmp2cow4"]
+
+[ext_resource type="Script" uid="uid://dbflau0th34e4" path="res://gd/escena_1.gd" id="1_fnr8k"]
+[ext_resource type="Texture2D" uid="uid://dl6j45rg5lxg4" path="res://Character/Alex/Alex default.png" id="1_p47at"]
+
+[node name="Escena 1" type="Node2D"]
+script = ExtResource("1_fnr8k")
+
+[node name="AlexDefault" type="Sprite2D" parent="."]
+position = Vector2(274, 352)
+texture = ExtResource("1_p47at")

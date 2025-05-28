@@ -1,0 +1,118 @@
+[gd_scene load_steps=10 format=3 uid="uid://c0m1lgpxmwphg"]
+
+[ext_resource type="Script" uid="uid://c0c7i74ldcm" path="res://gd/sombra_angela_inicio.gd" id="1_q88o1"]
+[ext_resource type="Texture2D" uid="uid://dftvvuy3y1om3" path="res://Assets/Fondo rojo gris.png" id="1_xcsvx"]
+[ext_resource type="Texture2D" uid="uid://buv5dej0ia122" path="res://Assets/Button.png" id="3_2bpjf"]
+[ext_resource type="Texture2D" uid="uid://d0va81a65ygsr" path="res://Assets/Sombra Angela png.png" id="3_hu08f"]
+[ext_resource type="Texture2D" uid="uid://ddi3fejaksy6i" path="res://Assets/Flecha.png" id="4_1aii5"]
+[ext_resource type="Texture2D" uid="uid://brxj7lqt6uby3" path="res://Assets/Sombra angela 2.png" id="4_sd4ue"]
+[ext_resource type="FontFile" uid="uid://b30c1fih5l3hh" path="res://fonts/THENIGHTLAMP.ttf" id="6_1aii5"]
+[ext_resource type="AudioStream" uid="uid://q8xjah5rwxef" path="res://music/pasar_encima_button.mp3" id="6_nxhip"]
+[ext_resource type="AudioStream" uid="uid://dchf8xklt234e" path="res://music/Click_Button.mp3" id="7_gdvnc"]
+
+[node name="SombraAngelaInicio" type="Node2D"]
+script = ExtResource("1_q88o1")
+
+[node name="FondoRojoGris" type="Sprite2D" parent="."]
+position = Vector2(570, 359)
+texture = ExtResource("1_xcsvx")
+
+[node name="SombraAngelaPng" type="Sprite2D" parent="."]
+position = Vector2(380, 308)
+scale = Vector2(1.17857, 1.17857)
+texture = ExtResource("3_hu08f")
+
+[node name="SombraAngela2" type="Sprite2D" parent="."]
+position = Vector2(633, 303.5)
+scale = Vector2(1.1875, 1.1875)
+texture = ExtResource("4_sd4ue")
+
+[node name="TextureButtonSiguiente" type="TextureButton" parent="."]
+offset_left = 861.0
+offset_top = 25.0
+offset_right = 1118.0
+offset_bottom = 67.0
+mouse_default_cursor_shape = 3
+
+[node name="ButtonSiguiente" type="Sprite2D" parent="TextureButtonSiguiente"]
+position = Vector2(127, 149)
+scale = Vector2(0.287109, 1)
+texture = ExtResource("3_2bpjf")
+
+[node name="Flecha2Siguiente" type="Sprite2D" parent="TextureButtonSiguiente"]
+position = Vector2(135, 19)
+rotation = -3.14159
+scale = Vector2(0.315774, 0.124882)
+texture = ExtResource("4_1aii5")
+
+[node name="Encima_button" type="AudioStreamPlayer" parent="TextureButtonSiguiente"]
+stream = ExtResource("6_nxhip")
+volume_db = -15.928
+
+[node name="Click_Button" type="AudioStreamPlayer" parent="TextureButtonSiguiente"]
+stream = ExtResource("7_gdvnc")
+
+[node name="TextureButtonAtras" type="TextureButton" parent="."]
+offset_left = 37.0
+offset_top = 26.0
+offset_right = 297.0
+offset_bottom = 66.0
+mouse_default_cursor_shape = 3
+
+[node name="Button2Atras" type="Sprite2D" parent="TextureButtonAtras"]
+position = Vector2(132, 148)
+scale = Vector2(0.291992, 1)
+texture = ExtResource("3_2bpjf")
+
+[node name="FlechaAtras" type="Sprite2D" parent="TextureButtonAtras"]
+position = Vector2(128.25, 16)
+scale = Vector2(0.268601, 0.125326)
+texture = ExtResource("4_1aii5")
+
+[node name="Encima_button" type="AudioStreamPlayer" parent="TextureButtonAtras"]
+stream = ExtResource("6_nxhip")
+volume_db = -15.928
+
+[node name="Click_Button" type="AudioStreamPlayer" parent="TextureButtonAtras"]
+stream = ExtResource("7_gdvnc")
+
+[node name="TextureButtonBack" type="TextureButton" parent="."]
+offset_left = 31.0
+offset_top = 585.0
+offset_right = 302.0
+offset_bottom = 625.0
+mouse_default_cursor_shape = 3
+
+[node name="Button3Back" type="Sprite2D" parent="TextureButtonBack"]
+position = Vector2(135.5, 148)
+scale = Vector2(0.299805, 1)
+texture = ExtResource("3_2bpjf")
+
+[node name="LabelBack" type="Label" parent="TextureButtonBack"]
+layout_mode = 0
+offset_left = 76.0
+offset_top = -5.0
+offset_right = 193.0
+offset_bottom = 47.0
+theme_override_fonts/font = ExtResource("6_1aii5")
+theme_override_font_sizes/font_size = 39
+text = "BACK"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Encima_button" type="AudioStreamPlayer" parent="TextureButtonBack"]
+stream = ExtResource("6_nxhip")
+volume_db = -15.928
+
+[node name="Click_Button" type="AudioStreamPlayer" parent="TextureButtonBack"]
+stream = ExtResource("7_gdvnc")
+
+[connection signal="mouse_entered" from="TextureButtonSiguiente" to="." method="_on_texture_button_siguiente_mouse_entered"]
+[connection signal="pressed" from="TextureButtonSiguiente" to="." method="_on_texture_button_siguiente_pressed"]
+[connection signal="ready" from="TextureButtonSiguiente/Click_Button" to="." method="_on_click_button_ready"]
+[connection signal="mouse_entered" from="TextureButtonAtras" to="." method="_on_texture_button_atras_mouse_entered"]
+[connection signal="pressed" from="TextureButtonAtras" to="." method="_on_texture_button_atras_pressed"]
+[connection signal="ready" from="TextureButtonAtras/Click_Button" to="." method="_on_click_button_ready"]
+[connection signal="mouse_entered" from="TextureButtonBack" to="." method="_on_texture_button_back_mouse_entered"]
+[connection signal="pressed" from="TextureButtonBack" to="." method="_on_texture_button_back_pressed"]
+[connection signal="ready" from="TextureButtonBack/Click_Button" to="." method="_on_click_button_ready"]
